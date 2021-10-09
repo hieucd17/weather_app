@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(236, 198, 151, 0.678);
+}
+.container {
+    background-color:rgb(209, 32, 209);
+    text-align: center;
+    width: 30%;
+    margin: 10px auto;
+    border-radius: 8px;
+    font-family: 'Scheherazade New', serif;
+}
+
+.additional-section {
+    background-color: rgb(202, 103, 31);
+}
+.search_bar {
+    padding-top:20px ;
+    position: relative;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+}
+
+.search_bar i{
+    color:white;
+    font-weight: 500;
+    position: absolute;
+    margin-right: 8px;
+    left: 2px;
+    bottom: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#search_input {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    padding: 3px 3px 5px 20px;
+    height: 20px;
+    font-size: 16px;
+}
+#search_input::placeholder {
+    color:yellow;
+} 
+
+.weather_city {
+    margin-top: 40px;
+    color: white;
+    font-size: 22px;
+}
+
+.weather_state {
+    color:white;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.temperature {
+    font-size: 70px;
+    color: white;
+    font-weight: linear;
+    margin-top: -20px;   
+    position: relative;
+}
+
+.temperature::after {
+    content:'o';
+    position: absolute;
+    font-size: 35px;
+}
+
+.additional-section {
+    border-top: 1.5px solid white;
+    margin-top: 70px;
+    flex-direction: column;
+    display: flex;
+    padding: 10px 20px;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.item {
+    margin-top: 5px;
+    color: white;
+    flex:1;
+}
+
+.item .lable {
+    font-weight: 600;
+}
+
+.item .value {
+    font-weight: 300;
+}
+.sticker {
+    width: calc(79px);
+    height: calc(79px);
+    background-image: url(../ảnh/betakkuma.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    float: left;
+    margin-left: 400px;
+    display: inline-block;
+    }
+.sticker1 {
+    width: calc(79px);
+    height: calc(79px);
+    background-image: url(../ảnh/17634150_2041011732792967_1197758407671545856_n.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    float: right;
+    margin-right: 400px;
+    display: inline-block;
+    }
+
+/* -----------mặt trời------------------- */
+/* CSS responsive phải để sau cùng vì css đọc từ dưới lên mới đè được cái ban đầu*/
+@media screen and (max-width: 740px) {
+    .container {
+        width: 60%;
+        height: 60%;
+        margin: 10px auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .sticker1,
+    .sticker {
+        display: none;
+    }
+    .sticker {
+        margin-right: 10px;
+    }
+    #search_input {
+        font-size: 11px;
+        margin-left: 25px;
+        font-weight: 500;
+        margin-bottom: -2px;
+    }
+    .search_bar i {
+        font-size: 12px;
+        margin-bottom: -2px;
+        cursor: pointer;
+    }
+    .lable {
+        font-size: 16px;
+    }
+    .search_bar {
+        margin-bottom: 0px;
+    }
+    .temperature {
+    }
+}
+

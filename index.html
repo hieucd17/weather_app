@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Scheherazade%20New">
+    <link rel="stylesheet" href="./sticker.css">
+</head>
+<body>
+    <div class="sticker"></div>
+    <div class="sticker1"></div>
+    <script src="./sticker.js"></script>
+    <div class="container">
+        <div class="main-section">
+            <div class="search_bar">
+                <i class="fal fa-search"></i>
+                <input type="text" 
+                placeholder="Xem Thời Tiết Đi Mấy Em"
+                name="search_city" id="search_input">
+            </div>
+            <p class="weather_city"></p>
+            <p class="weather_state"></p>
+            <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="Weather_icon" class="weather_icon">
+            <p class="temperature">26</p>
+        </div>
+        <div class="additional-section">
+            <div class="row">
+                <div class="item">
+                    <div class="lable">Sky Mọc</div>
+                    <div class="value sunrise">6:16</div>
+                </div>
+                <div class="item">
+                    <div class="lable">Sky Lặn</div>
+                    <div class="value sunset">17:57</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div class="lable">Độ Ẩm
+                    </div>
+                    <div class="value"><span class="humidity">73</span>%</div>
+                </div>
+                <div class="item">
+                    <div class="lable">Tốc Độ Gió</div>
+                    <div class="value"><span class="wind_speed">5.54</span>km/h</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./moment.js"></script>
+    <script src="./index.js"></script>
+    <script src="./sticker.js"></script>
+</body>
+</html>
